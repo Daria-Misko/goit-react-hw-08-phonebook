@@ -1,20 +1,23 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.6667dfc6.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.fba160f1.js",
-    "static/js/270.5e730449.chunk.js": "/goit-react-hw-08-phonebook/static/js/270.5e730449.chunk.js",
-    "static/js/727.87990a37.chunk.js": "/goit-react-hw-08-phonebook/static/js/727.87990a37.chunk.js",
-    "static/js/262.298f4e57.chunk.js": "/goit-react-hw-08-phonebook/static/js/262.298f4e57.chunk.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.6feabab6.js",
+    "static/js/270.c363ba63.chunk.js": "/goit-react-hw-08-phonebook/static/js/270.c363ba63.chunk.js",
+    "static/js/274.95f47e0e.chunk.js": "/goit-react-hw-08-phonebook/static/js/274.95f47e0e.chunk.js",
+    "static/js/262.7ddef90c.chunk.js": "/goit-react-hw-08-phonebook/static/js/262.7ddef90c.chunk.js",
     "static/css/174.758005c4.chunk.css": "/goit-react-hw-08-phonebook/static/css/174.758005c4.chunk.css",
     "static/js/174.5c091455.chunk.js": "/goit-react-hw-08-phonebook/static/js/174.5c091455.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.6667dfc6.css.map": "/goit-react-hw-08-phonebook/static/css/main.6667dfc6.css.map",
-    "main.fba160f1.js.map": "/goit-react-hw-08-phonebook/static/js/main.fba160f1.js.map",
+    "main.6feabab6.js.map": "/goit-react-hw-08-phonebook/static/js/main.6feabab6.js.map",
+    "270.c363ba63.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/270.c363ba63.chunk.js.map",
+    "274.95f47e0e.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/274.95f47e0e.chunk.js.map",
+    "262.7ddef90c.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/262.7ddef90c.chunk.js.map",
     "174.758005c4.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/174.758005c4.chunk.css.map",
     "174.5c091455.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/174.5c091455.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6667dfc6.css",
-    "static/js/main.fba160f1.js"
+    "static/js/main.6feabab6.js"
   ]
 }
