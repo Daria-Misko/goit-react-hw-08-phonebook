@@ -16,14 +16,10 @@ import { PrivateRoute } from './PrivateRoute';
 import authSelectors from 'redux/auth/authSelectors';
 import { Layout } from './Layout/Layout';
 
-const HomePage = lazy(() => import('../components/pages/HomePage/HomePage'));
-const LoginPage = lazy(() => import('../components/pages/LoginPage/LoginPage'));
-const RegisterPage = lazy(() =>
-  import('../components/pages/RegisterPage/RegisterPage')
-);
-const ContactsPage = lazy(() =>
-  import('../components/pages/ContactsPage/ContactsPage')
-);
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
+const RegisterPage = lazy(() => import('./pages/RegisterPage/RegisterPage'));
+const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 
 export function App() {
   // const contacts = useSelector(selectContacts);
