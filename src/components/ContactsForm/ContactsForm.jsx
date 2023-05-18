@@ -25,16 +25,16 @@ export const ContactsForm = () => {
     e.preventDefault();
     const newContact = {
       name: name,
-      phone: number,
+      number: number,
     };
     const isInContacts = contacts.find(
       contact =>
         contact.name.toLowerCase() === newContact.name.toLowerCase() ||
-        contact.phone === newContact.phone
+        contact.number === newContact.number
     );
     if (isInContacts) {
       toast.error(
-        `${newContact.name} or ${newContact.phone} has already existed`
+        `${newContact.name} or ${newContact.number} has already existed`
       );
       return;
     }
