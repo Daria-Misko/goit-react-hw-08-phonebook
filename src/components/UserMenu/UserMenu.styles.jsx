@@ -8,30 +8,34 @@ export const Container = styled.div`
 `;
 
 export const UserName = styled.p`
-  font-style: italic;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.5;
-  color: white;
-  margin-right: 10px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 7px;
 `;
 
 export const LogOutBtn = styled.button`
-  display: block;
-  margin-left: auto;
-  margin-right: 20px;
-  width: 80px;
-  padding: 8px;
-  border: none;
-  cursor: pointer;
-  font-size: 15px;
-  background-color: black;
-  color: white;
-  border-radius: 4px;
+  text-decoration: none;
 
+  text-align: center;
+  min-width: 60px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #e2dedb;
+  background: #b3aca7;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   &:hover,
   &:focus {
-    transform: scale(1.1);
-    box-shadow: 10px 5px 5px grey;
+    background: #75706c;
+    color: #e2dedb;
   }
 `;

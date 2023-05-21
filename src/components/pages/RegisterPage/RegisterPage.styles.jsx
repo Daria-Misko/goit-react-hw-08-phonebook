@@ -61,4 +61,16 @@ const Input = styled.input`
   }
 `;
 
-export { Form, Label, Btn, Input };
+const Title = styled.h2`
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  margin: 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--red);
+`;
+
+export { Form, Label, Btn, Input, Title };

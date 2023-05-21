@@ -1,5 +1,4 @@
 export const selectContacts = ({ contacts: { items } }) => items;
-export const selectFilter = ({ filter }) => filter;
 export const selectIsLoading = ({ contacts: { isLoading } }) => isLoading;
 export const selectError = ({ contacts: { err } }) => err;
 

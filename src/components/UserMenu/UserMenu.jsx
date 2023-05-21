@@ -6,11 +6,10 @@ import { Container, LogOutBtn, UserName } from './UserMenu.styles';
 export const UserMenu = () => {
   const dispatch = useDispatch();
   const name = useSelector(authSelectors.selectUserName);
-  // const email = useSelector(authSelectors.selectUserEmail);
+
   return (
     <Container>
-      <UserName>Welcome, {name}</UserName>
-      {/* <p>Your email: {email}</p> */}
+      <UserName>Welcome, {name}!</UserName>
       <LogOutBtn type="button" onClick={() => dispatch(logOut())}>
         Log out
       </LogOutBtn>

@@ -2,7 +2,7 @@
 // import { LoginForm } from 'components/LoginForm/LoginForm';
 import { logIn } from 'redux/auth/authOperations';
 import { useDispatch } from 'react-redux';
-import { Btn, Form, Input, Label } from './LoginPage.styles';
+import { Btn, Form, Input, Label, Title } from './LoginPage.styles';
 
 export default function LoginPage() {
   const dispatch = useDispatch();
@@ -20,24 +20,19 @@ export default function LoginPage() {
   };
 
   return (
-    <Form onSubmit={handleSubmit} autoComplete="off">
-      <Label>
-        Email
-        <Input type="email" name="email" />
-      </Label>
-      <Label>
-        Password
-        <Input type="password" name="password" />
-      </Label>
-      <Btn type="submit">Log In</Btn>
-    </Form>
+    <>
+      <Title>Login</Title>
+      <Form onSubmit={handleSubmit} autoComplete="off">
+        <Label>
+          Email
+          <Input type="email" name="email" />
+        </Label>
+        <Label>
+          Password
+          <Input type="password" name="password" />
+        </Label>
+        <Btn type="submit">Log In</Btn>
+      </Form>
+    </>
   );
-  // return (
-  //   <div>
-  //     <Helmet>
-  //       <title>LoginPage</title>
-  //     </Helmet>
-  //     <LoginForm />
-  //   </div>
-  // );
 }

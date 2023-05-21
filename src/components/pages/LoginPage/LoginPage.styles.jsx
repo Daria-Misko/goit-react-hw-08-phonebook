@@ -1,7 +1,25 @@
 import styled from 'styled-components';
 
+// const FormWrapper = styled.div`
+//   width: 500px;
+//   border-radius: 10px 10px 10px 10px;
+//   background: #ffffff1f;
+//   -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+//   box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+//   text-align: center;
+//   padding: 20px;
+//   margin: 0 auto;
+//   border: solid 1px #b3aca7;
+// `;
+
 const Form = styled.form`
   width: 500px;
+  /* border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center; */
+
   margin: 0 auto;
   padding: 0;
   margin-bottom: 40px;
@@ -61,4 +79,15 @@ const Input = styled.input`
   }
 `;
 
-export { Form, Label, Btn, Input };
+const Title = styled.h2`
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  margin: 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--red);
+`;
+export { Form, Label, Btn, Input, Title };

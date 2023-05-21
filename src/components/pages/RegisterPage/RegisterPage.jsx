@@ -1,7 +1,7 @@
 // import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/authOperations';
-import { Btn, Form, Input, Label } from './RegisterPage.styles';
+import { Btn, Form, Input, Label, Title } from './RegisterPage.styles';
 // import { Helmet } from 'react-helmet';
 
 export default function RegisterPage() {
@@ -21,20 +21,23 @@ export default function RegisterPage() {
   };
 
   return (
-    <Form onSubmit={handleSubmit} autoComplete="off">
-      <Label>
-        Username
-        <Input type="text" name="name" />
-      </Label>
-      <Label>
-        Email
-        <Input type="email" name="email" />
-      </Label>
-      <Label>
-        Password
-        <Input type="password" name="password" />
-      </Label>
-      <Btn type="submit">Register</Btn>
-    </Form>
+    <>
+      <Title>Create your own account</Title>
+      <Form onSubmit={handleSubmit} autoComplete="off">
+        <Label>
+          Username
+          <Input type="text" name="name" />
+        </Label>
+        <Label>
+          Email
+          <Input type="email" name="email" />
+        </Label>
+        <Label>
+          Password
+          <Input type="password" name="password" />
+        </Label>
+        <Btn type="submit">Register</Btn>
+      </Form>
+    </>
   );
 }

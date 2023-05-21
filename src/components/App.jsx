@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 // import { ContactsForm } from './ContactsForm/ContactsForm';
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 // import { ContactsList } from './ContactsList/ContactsList';
 // import { Title, Notification } from './App.styles';
 // import { selectContacts, selectIsLoading, selectError } from 'redux/selectors';
-import { lazy } from 'react';
+import { lazy, useEffect } from 'react';
 // import { fetchContacts } from 'redux/operations';
 import Loader from './Loader/Loader';
 import { Route, Routes } from 'react-router-dom';
@@ -15,6 +15,8 @@ import { PrivateRoute } from './PrivateRoute';
 
 import authSelectors from 'redux/auth/authSelectors';
 import { Layout } from './Layout/Layout';
+// import { fetchContacts } from 'redux/operations';
+import { refreshUser } from 'redux/auth/authOperations';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
@@ -28,10 +30,10 @@ export function App() {
 
   const isRefreshing = useSelector(authSelectors.selectIsRefreshing);
 
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(refreshUser());
+  }, [dispatch]);
 
   // return (
   //   <>

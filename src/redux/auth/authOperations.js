@@ -20,11 +20,11 @@ export const register = createAsyncThunk(
     try {
       const { data } = await axios.post('/users/signup', credentials);
       token.set(data.token);
-      toast.success('Great!Now you are registered 👍');
+      toast.success('You are registered 🤗 Start to work!');
       return data;
     } catch (error) {
       return rejectWithValue(
-        toast.failure("Please log in, you've been registered already")
+        toast("Please log in, you've been registered already")
       );
     }
   }
@@ -40,7 +40,7 @@ export const logIn = createAsyncThunk(
       return data;
     } catch (error) {
       return rejectWithValue(
-        toast.failure('Oops,we dont have you. You should register first 😊')
+        toast('Oops,we dont have you. You should register first 😊')
       );
     }
   }
@@ -51,7 +51,7 @@ export const logOut = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       await axios.post('/users/logout');
-      toast.success("Bye-bye 🙋‍♀️ You're successfully logged out!");
+      toast.success("You're successfully logged out!");
       token.unset();
     } catch (error) {
       return rejectWithValue(error.message);
