@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 import {
   selectContacts,
@@ -38,7 +38,6 @@ export default function ContactsPage() {
       {contacts.length === 0 && (
         <Notification>Contact list is empty =(</Notification>
       )}
-      <ToastContainer position="top-right" autoClose={3000} theme="colored" />
     </>
   );
 }

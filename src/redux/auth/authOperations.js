@@ -24,7 +24,7 @@ export const register = createAsyncThunk(
       return data;
     } catch (error) {
       return rejectWithValue(
-        toast("Please log in, you've been registered already")
+        toast.error("Please log in, you've been registered already")
       );
     }
   }
@@ -40,7 +40,7 @@ export const logIn = createAsyncThunk(
       return data;
     } catch (error) {
       return rejectWithValue(
-        toast('Oops,we dont have you. You should register first 😊')
+        toast.error('Oops,we dont have you. You should register first 😊')
       );
     }
   }
