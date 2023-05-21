@@ -3,12 +3,10 @@ import styled from 'styled-components';
 import 'animate.css';
 
 const Hero = styled.div`
-  /* margin: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* width: 1000px; */
   margin-top: 20px;
   margin-left: 16px;
   width: 100%;
@@ -78,7 +76,6 @@ const StyledLink = styled(NavLink)`
   &:hover,
   &:focus {
     background: var(--bg);
-    /* color: #e2dedb; */
   }
 `;
 
